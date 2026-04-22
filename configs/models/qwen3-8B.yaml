@@ -1,0 +1,3 @@
+model:
+  name: "qwen3-8b"
+  path: "Qwen/Qwen3-8B"

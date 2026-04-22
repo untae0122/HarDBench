@@ -1,0 +1,33 @@
+# HarDBench experiment config example
+# Usage: python run_experiment.py --config configs/experiment_example.yaml --gpu 0
+
+model:
+  name: "llama3-8b-instruct"   # Model key (must match a key in ADAPTER_FILES in attack_worker.py)
+  path: "/path/to/your/model"  # Local model path; omit for API-based models
+  # safetyprompt: false        # Whether to apply a safety system prompt (optional)
+
+# experiment_name: "my_experiment"  # Used in result folder name (defaults to config filename)
+# output_dir: "results/my_run"      # Override result directory (auto-generated if omitted)
+
+pipelines:
+  # ── CoJP variant ─────────────────────────────────────────────────────────
+  - prompt_variant: "cojp"          # Category-specific template filled with draft
+    input: "data/HarDbench_test.json"
+    save_interval: 50
+    batch_size: 1
+    ablation_mode: "none"
+    # env: "HarDBench"              # Conda env name to run in (omit to use current env)
+
+  # ── HQ variant (Compare step is automatically skipped) ───────────────────
+  - prompt_variant: "hq"            # Uses item['prompt_only'] field directly
+    input: "data/HarDbench_test.json"
+    save_interval: 50
+    batch_size: 1
+    ablation_mode: "none"
+    # env: "HarDBench"
+
+# ── Optional extra arguments for each step ───────────────────────────────────
+# eval:
+#   extra_args: ["--model", "gpt-4o-2024-08-06", "--max-workers", "20"]
+# compare:
+#   extra_args: ["--model", "gpt-4o-2024-08-06", "--max-workers", "20"]

@@ -1,0 +1,5 @@
+"Llama-3-8B": "meta-llama/Meta-Llama-3-8B-Instruct",
+"Llama-3-8B-safetyprompt": "meta-llama/Meta-Llama-3-8B-Instruct",
+"Llama-3-8B-kto-hq": "/data1/REDTEAMING_LLM/saves/llama3-8b/lora/kto-hq/20250911_153941/trained_model",
+"Llama-3-8B-kto": "/data1/REDTEAMING_LLM/saves/llama3-8b/lora/kto/20250518_180333/trained_model",
+"Llama-3-8B-kto-nobenign": "/data1/REDTEAMING_LLM/saves/llama3-8b/lora/kto_nobenign/20250714_214915/trained_model",
