@@ -1,7 +1,7 @@
 # HarDBench
 
 ### This is the official project of the paper:
-[ACL 2026] [HarDBench: A Benchmark for Draft-Based Co-Authoring Jailbreak Attacks for Safe Human–LLM Collaborative Writing]()
+[ACL 2026] [HarDBench: A Benchmark for Draft-Based Co-Authoring Jailbreak Attacks for Safe Human–LLM Collaborative Writing](https://arxiv.org/abs/2604.19274v1)
 
 ---
 
