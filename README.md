@@ -194,10 +194,11 @@ results/<model>/<experiment>_<timestamp>/
 If you use this project in your research, please cite it as follows:
 
 ```bibtex
-@inproceedings{hardbench2026,
-  title     = {},
-  author    = {},
-  booktitle = {},
-  year      = {2026}
+@inproceedings{kim2026hardbench,
+  title={HarDBench: A Benchmark for Draft-Based Co-Authoring Jailbreak Attacks for Safe Human--LLM Collaborative Writing},
+  author={Kim, Euntae and Han, Soomin and Chang, Buru},
+  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={40785--40831},
+  year={2026}
 }
 ```
